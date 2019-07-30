@@ -108,9 +108,9 @@ header img {
 /* Audio Table */
 
 #audio{
-    margin-left: -2vw;
+    margin-left: -3vw;
     height: auto;
-    padding: 10vh;
+    padding: 10vw;
     background-color: #e4e4e4;
     border-top: grey 1px solid;
 }
@@ -144,11 +144,10 @@ header img {
     max-inline-size: 22vw;
 }
 
-
 /* Video Footer */
 
 #ending {
-    padding: 10vh;
+    padding: 2vw;
 }
 
 #ending h2 {
@@ -160,8 +159,9 @@ header img {
 #ending #knee video {
     box-shadow: 0 0 12px -2px #000;
     border-radius: 5px;
+    display: inline-block;
     width: 30vw;
-    margin: 20px;
+    margin: 2vw;
     height: auto;
 }
 
@@ -192,8 +192,9 @@ header img {
     padding: 1.8vh;
     opacity: 0.9;
     background-color: #e4e4e4;
+    box-shadow: 2px 2px 6px -2px #000;
     border-radius: 4px;
-    margin-bottom: 10vh;
+    margin-bottom: 10vw;
 }
 
 #more {
@@ -203,7 +204,7 @@ header img {
 /* Footer */
 
 #footer {
-    padding: 10vh;
+    padding: 5vw;
     padding-left: 8vw;
     background-color: #ddd;
 }
@@ -241,6 +242,10 @@ header img {
     width: 30vw;
 }
 
+#showcase h2 {
+    padding-bottom: 10vh;
+}
+
 /* Audio Table */
 
 #audio audio {
@@ -253,17 +258,12 @@ header img {
 
 /* Video Footer */
 
-#ending {
-    padding: 4vh;
-}
-
 #ending h2 {
     font-size: 1.2rem;
 }
 
 #ending #knee video {
     width: 30vw;
-    margin: 3vw;
 }
 
 /* Explaning*/
@@ -276,13 +276,19 @@ header img {
 
 /* Footer */
 
-}
-
-@media screen and (max-width: 580px) {
+/* Utility Classes */
 
 .hide-on-small {
     display: none;
 }
+
+.hide-on-large {
+    display: block;
+}
+
+}
+@media screen and (max-width: 580px) {
+
 
 /* Showcase */
 
@@ -292,10 +298,6 @@ header img {
 
 #showcase h1 {
     font-size: 3.5rem;
-}
-
-#showcase h2 {
-    padding-bottom: 10vh;
 }
 
 /* Video Table */
@@ -310,6 +312,7 @@ header img {
 
 #video video {
     width: 65vw;
+    margin-bottom: 3vh;
 }
 
 /* Table Time */
