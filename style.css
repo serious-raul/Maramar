@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1f1f1f;
+    color: #000;
+    margin: 0;
+    line-height: 1.6;
+}
+  
+/* Showcase */
+
+header {
+    z-index: 50;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+header img {
+    padding: 5px;
+    width: 30vw;
+}
+
+#showcase {
+    margin: 0;
+    padding: 0;
+    background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+    url('lookup.jpg') no-repeat
+    center/cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-y: hidden;
+    color: #fff;
+    box-shadow: 0 0 12px -2px #000;
+    z-index: 50;
+}
+
+#showcase .container {
+    max-width: 960px;
+    margin-top: 8vh;
+}
+
+#showcase h1 {
+    font-size: 5rem;
+    padding-top: 8vh;
+    margin-bottom: 0;
+}
+
+#showcase h2 {
+    font-size: 1.5rem;
+}
+
+#showcase .lead {
+    font-size: 1rem;
+    padding-bottom: 10vh;
+}
+
+/* Video */
+
+#video {
+    padding: 10vh;
+}
+
+#video h2 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#video video {
+    box-shadow: 0 0 12px -2px #000;
+    border-radius: 5px;
+    width: 60vw;
+    height: auto;
+}
+
+/* Table Time */
+
+#tabletime {
+    height: auto;
+    padding: 10vh;
+    background-color: #e4e4e4;
+    box-shadow: 0 0 12px -2px #000;
+}
+
+#tabletime .container {
+    max-width: 960px;
+}
+
+#tabletime h2 {
+    font-size: 1.5rem;
+}
+
+#tabletime img {
+    width: 60vw;
+    height: auto;
+}
+
+#tabletime h3 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Audio Table */
+
+#audio{
+    margin-left: -2vw;
+    height: auto;
+    padding: 10vh;
+    background-color: #e4e4e4;
+    border-top: #000 1px solid;
+}
+
+#audio h2 {
+    font-size: 1.5rem;
+}
+
+#audio table {
+    box-shadow: inset 0 0 12px -2px #000;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    padding: 60px;
+    padding-left: 8vw;
+    width: 90vw;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#audio table tr {
+    text-align: left;
+}
+
+#audio table th {
+    padding-right: 10vw;
+    text-align: center;
+}
+
+#audio table audio {
+    max-block-size: 4vh;
+    max-inline-size: 22vw;
+}
+
+
+/* Video Footer */
+
+#ending {
+    padding: 10vh;
+}
+
+#ending h2 {
+    color:#fff;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#ending #knee video {
+    box-shadow: 0 0 12px -2px #000;
+    border-radius: 5px;
+    width: 30vw;
+    margin: 20px;
+    height: auto;
+}
+
+/* Footer */
+#footer {
+    padding: 10vh;
+    padding-left: 8vw;
+    background-color: #ddd;
+    border-top: 1px solid grey;
+    box-shadow: 0 0 12px -2px #000;
+}
+
+#footer ul {
+    padding-right: 5vw;
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+#footer ul li {
+    padding-right: 5vw;
+}
+
+/* Utility Classes */
+
+.container {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.hide-on-large {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+
+}
+
+@media screen and (max-width: 580px) {
+
+
+}
