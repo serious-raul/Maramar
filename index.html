@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
   <title>Bem-Vindo ao Maramar</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/e039c48840.js"></script>
+  <script src="main.js"></script>
 </head>
 <body>
 
@@ -18,7 +20,7 @@
     <div class="section-main container">
       <h1>Instituto Maramar</h1>
       <h2>Lorem ipsum dolor sit amet </h2>
-      <p class="lead"> Consectetur adipiscing elit,
+      <p class="lead hide-on-small"> Consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           In tellus integer feugiat scelerisque varius morbi.
           Mauris nunc congue nisi vitae suscipit tellus.
@@ -64,7 +66,7 @@
       <div id="aline">
         <img src="timeline.png" alt="timeline">
       </div>
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      <h3 class="hide-on-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         In tellus integer feugiat scelerisque varius morbi.
         Mauris nunc congue nisi vitae suscipit tellus.
@@ -161,7 +163,7 @@
       </div>
   
   <!-- Ending Video Section -->
-  <section id="ending" class="container hide-on-small">
+  <section id="ending" class="container">
     <div id="knee" class="container">
       <h2 class="section-head">
         <i class="fas fa-video"></i>  Videos
@@ -175,6 +177,21 @@
         <source src="firepit.mp4" type="video/mp4">
       </video>
     </div>
+  </section>
+
+  <!-- New -->
+  <section id="explaning">
+      <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+        <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor.
+          Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+          Fusce luctus vestibulum augue ut aliquet.
+          Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+          In at libero sed nunc venenatis imperdiet sed ornare turpis.
+          Donec vitae dui eget tellus gravida venenatis.
+          Integer fringilla congue eros non fermentum.
+          Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>  
   </section>
 
   <!-- Footer -->
