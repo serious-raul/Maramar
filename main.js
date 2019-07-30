@@ -1,22 +1,15 @@
-//Responsive Nav
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-$(function() {
-	menu = $('nav ul');
-
-  $('#openup').on('click', function(e) {
-    e.preventDefault(); menu.slideToggle();
-  });
-  
-  $(window).resize(function(){
-    var w = $(this).width(); if(w > 480 && menu.is(':hidden')) {
-      menu.removeAttr('style');
-    }
-  });
-  
-  $('nav li').on('click', function(e) {                
-    var w = $(window).width(); if(w < 480 ) {
-      menu.slideToggle(); 
-    }
-  });
-  $('.open-menu').height($(window).height());
-});
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
