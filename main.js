@@ -1,7 +1,7 @@
 // Really Shows
 
-function showThat() {
-  var x = document.getElementById("more");
+function showThe(el) {
+  var x = document.getElementById(el);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -9,7 +9,7 @@ function showThat() {
   }
 }
 
-// Fix vh
+// Fix vh and vw
 
 window.addEventListener('resize', () => {
   // We execute the same script as before

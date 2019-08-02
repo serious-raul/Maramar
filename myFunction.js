@@ -8,12 +8,12 @@ function showMore(rets, more, button) {
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
+        btnText.innerHTML = "Mais";
         moreText.style.display = "none";
     }
     else {
         dots.style.display = "none";
-        btnText.innerHTML = "Read less";
+        btnText.innerHTML = "Menos";
         moreText.style.display = "inline";
     }
 }
@@ -35,4 +35,7 @@ function showMoreList(rets, more, button) {
         btnText.innerHTML = "▲";
         moreText.style.display = "block";
     }
+
+    window.scrollBy(0, 150)
+
 }

@@ -7,24 +7,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bem-Vindo ao Maramar</title>
+    <title>Instituto Maramar</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="myFunction.js"></script>
     <script src="https://kit.fontawesome.com/e039c48840.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
 
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+
  <!-- Showcase -->
+    
     <section>
         <div>
             <header>
                 <img src="both_logotitle.png" alt="">
             </header>
         </div>
-        <div id="main">
+        <div data-aos="fade-in" id="main">
             <h1>Instituto Maramar</h1>
             <h2>Lorem ipsum dolor sit amet </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -37,13 +47,13 @@
                 Donec vitae dui eget tellus gravida venenatis.
                 Integer fringilla congue eros non fermentum.
                 Sed dapibus pulvinar nibh tempor porta.</span></p>
-            <button onclick="showMore('dots1','text1','fstBtn')" id="fstBtn">Read more</button>
+            <button onclick="showMore('dots1','text1','fstBtn')" id="fstBtn">Mais</button>
         </div>
     </section>
 
   <!-- Video Section -->
     <section>
-        <div id="video">
+        <div data-aos="fade-in" id="video">
             <h2>
                 <i class="fas fa-photo-video"></i>  Video
             </h2>
@@ -56,7 +66,7 @@
   
   <!-- Timetable Section -->
     <section>
-        <div id="timeline">
+        <div data-aos="fade-in" id="timeline">
             <h2><i class="fas fa-paste"></i>  Documentação</h2>
             <div>
                 <img src="timeline.png" alt="timeline">
@@ -71,13 +81,13 @@
                     Donec vitae dui eget tellus gravida venenatis.
                     Integer fringilla congue eros non fermentum.
                     Sed dapibus pulvinar nibh tempor porta.</span></p>
-                <button onclick="showMore('dots3','text3','trdBtn')" id="trdBtn">Read more</button>
+                <button onclick="showMore('dots3','text3','trdBtn')" id="trdBtn">Mais</button>
         </div>
     </section>
 
   <!-- Audio Section -->
     <section>
-        <div id="mecs">
+        <div data-aos="fade-in" id="mecs">
             <h2><i class="fas fa-cogs"></i>  Mecanismos de Participação</h2>
             <table>
                 <tbody>
@@ -148,21 +158,23 @@
   
   <!-- Ending Video Section -->
     <section>
-        <div id="double">
+        <div data-aos="fade-in" id="double">
             <h2><i class="fas fa-photo-video"></i>  Videos</h2>
-            <video width="auto" height="360"
-                preload="auto" controls="controls" autoplay loop>
+            <video id="fstvideo" width="auto" height="360" preload="auto" controls="controls" autoplay loop>
                 <source src="firepit.mp4" type="video/mp4">
             </video>
-            <video width="auto" height="360"
-                preload="auto" controls="controls" autoplay loop>
+            <video id="sndvideo" width="auto" height="360" preload="auto" controls="controls" autoplay loop>
                 <source src="firepit.mp4" type="video/mp4">
             </video>
+            <div id="othervideo">
+            <span id="reticence"></span>
+            <button onclick="showMore('reticence','sndvideo','midBtn')" id="midBtn">Mais</button>
+            </div>
         </div>
     </section>
 
   <!-- Newsletter -->
-    <section id="six">
+    <section data-aos="fade-in" id="six">
         <h2><i class="fas fa-newspaper"></i>  Newsletter</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
@@ -174,12 +186,12 @@
                 Donec vitae dui eget tellus gravida venenatis.
                 Integer fringilla congue eros non fermentum.
                 Sed dapibus pulvinar nibh tempor porta.</span></p>
-            <button onclick="showMore('dots2','text2','sndBtn')" id="sndBtn">Read more</button>
-        </section>
+            <button onclick="showMore('dots2','text2','sndBtn')" id="sndBtn">Mais</button>
+    </section>
 
   <!-- Footer -->
     <section>
-        <div id="foot">
+        <div data-aos="fade-in" id="foot">
             <div id="nav">
                 <span id="Symbol7">
                     Lorem
