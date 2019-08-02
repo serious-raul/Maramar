@@ -61,7 +61,7 @@ button {
     background-color: #e4e4e4;
     border: 1px solid rgb(90, 90, 90);
     border-radius: .2rem;
-    padding: .5rem;
+    padding: .5rem .8rem;
     margin: 40px;
 }
 
@@ -182,8 +182,13 @@ header img {
     background-color: #ddd;
 }
 
+#foot #nav {display: none;}
+
+#foot #content {padding-top: 3rem;}
+
 #foot ul {
-    padding: 3rem;
+    padding: 0rem 3rem;
+    padding-bottom: 3rem;
     display: inline-block;
 }
 
@@ -206,6 +211,12 @@ p {padding-bottom: 0;}
 #mecs table audio {
     display: none;
 }
+
+#foot #nav {display: inline-block;}
+
+#foot #content {padding-top: 0;}
+
+#foot button {margin: 3rem .5rem;}
 
 }
 
