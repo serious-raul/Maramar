@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- Clean HTML (least ids) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bem-Vindo ao Maramar</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="myFunction.js"></script>
+    <script src="https://kit.fontawesome.com/e039c48840.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+ <!-- Showcase -->
+    <section>
+        <div>
+            <header>
+                <img src="both_logotitle.png" alt="">
+            </header>
+        </div>
+        <div id="main">
+            <h1>Instituto Maramar</h1>
+            <h2>Lorem ipsum dolor sit amet </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+            <span id="dots1">...</span><span id="text1" class="more" >erisque enim ligula venenatis dolor.
+                Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                Fusce luctus vestibulum augue ut aliquet.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+                In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                Donec vitae dui eget tellus gravida venenatis.
+                Integer fringilla congue eros non fermentum.
+                Sed dapibus pulvinar nibh tempor porta.</span></p>
+            <button onclick="showMore('dots1','text1','fstBtn')" id="fstBtn">Read more</button>
+        </div>
+    </section>
+
+  <!-- Video Section -->
+    <section>
+        <div id="video">
+            <h2>
+                <i class="fas fa-video"></i>  Video
+            </h2>
+            <video width="auto" height="360"
+                preload="auto" controls="controls" autoplay loop>
+                <source src="firepit.mp4" type="video/mp4">
+            </video>   
+        </div>  
+    </section>
+  
+  <!-- Timetable Section -->
+    <section>
+        <div id="timeline">
+            <h2><i class="fas fa-paste"></i>  Documentação</h2>
+            <div>
+                <img src="timeline.png" alt="timeline">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+                <span id="dots3">...</span><span id="text3" class="more" >erisque enim ligula venenatis dolor.
+                    Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                    Fusce luctus vestibulum augue ut aliquet.
+                    Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+                    In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                    Donec vitae dui eget tellus gravida venenatis.
+                    Integer fringilla congue eros non fermentum.
+                    Sed dapibus pulvinar nibh tempor porta.</span></p>
+                <button onclick="showMore('dots3','text3','trdBtn')" id="trdBtn">Read more</button>
+        </div>
+    </section>
+
+  <!-- Audio Section -->
+    <section>
+        <div id="mecs">
+            <h2><i class="fas fa-cogs"></i>  Mecanismos de Participação</h2>
+            <table>
+                <tbody>
+                <tr>
+                <td></td>
+                <td>Petição de Ofícios</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>Contatos por telefone</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>Mensagens em Redes Sociais</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <th rolspam="7">Extrajudicial</th>
+                <td>Publicações em Redes Sociais</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>Encaminhamento de emails</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>Mobilização Comunitária</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>Reuniões Comunitárias</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>Consultas</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <th> ­­</th>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>Ação na População</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <th rolspam="3">Judicial</th>
+                <td>Ação Civil Pública</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>Processo</td>
+                <td><audio src="horizon.mp3" controls="controls"></audio></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>        
+    </section>
+  
+  <!-- Ending Video Section -->
+    <section>
+        <div id="double">
+            <h2><i class="fas fa-video"></i>  Videos</h2>
+            <video width="auto" height="360"
+                preload="auto" controls="controls" autoplay loop>
+                <source src="firepit.mp4" type="video/mp4">
+            </video>
+            <video width="auto" height="360"
+                preload="auto" controls="controls" autoplay loop>
+                <source src="firepit.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+  <!-- Newsletter -->
+    <section id="six">
+        <h2>Newsletter</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+            <span id="dots2">...</span><span id="text2" class="more" >erisque enim ligula venenatis dolor.
+                Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                Fusce luctus vestibulum augue ut aliquet.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+                In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                Donec vitae dui eget tellus gravida venenatis.
+                Integer fringilla congue eros non fermentum.
+                Sed dapibus pulvinar nibh tempor porta.</span></p>
+            <button onclick="showMore('dots2','text2','sndBtn')" id="sndBtn">Read more</button>
+        </section>
+
+  <!-- Footer -->
+    <section>
+        <div id="foot">
+            <ul>
+                <li>Missão Institucional</li>
+                <li>Atividades e programas</li>
+                <li>Abordagem</li>
+                <li>Quem Somos</li>
+                <li>Histórico</li>
+            </ul>
+            <ul>
+                <li>Atuação</li>
+                <li>Cafeteria Maramar</li>
+                <li>Pesca e Sociedade</li>
+                <li>Águas e Saneamento</li>
+                <li>Transparência Ambiental</li>
+            </ul>
+            <ul>
+                <li>Notícias</li>
+                <li>Artigos</li>
+                <li>Na Mídia</li>
+                <li>Galeria</li>
+                <li>Videos</li>
+            </ul>
+        </div>
+    </section>
+
+<!-- Test -->
+
+</body>
+</html>
