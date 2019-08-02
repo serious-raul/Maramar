@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,700&display=swap');
+
+
+/* Black is #1f1f1f */
+/* Blue is #42929d */
+/* Teal is #26636b */
+
+/* Probably the best version */
+
+/* Almost good for mobile */
+
+/* Breaks at 260px */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align:baseline;
+    list-style:none;
+    text-align: center;
+}
+
+img, embed, object, video, iframe {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: teal;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+}
+
+h2 {
+    padding: 2rem;
+}
+
+p {
+    text-align: justify;
+    padding: 3.5rem;
+    padding-top: 0;
+    margin: auto;
+    max-width: 960px;
+}
+
+iframe {
+    border-radius: .4rem;
+    box-shadow: 0 0 12px -2px #000;
+}
+
+/* Only on Small Screens */
+
+button {
+    display: none;
+    box-shadow: inset 0 0 2px;
+    font-weight: bold;
+    opacity: 0.9;
+    color: rgb(90, 90, 90);
+    background-color: #e4e4e4;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: .2rem;
+    padding: .5rem .8rem;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+button:active {
+    transform: translateY(2px);
+    filter: saturate(150%);
+}
+
+button:hover {
+     color: teal;
+     border-color: currentColor;
+     background-color: white;
+     cursor: pointer;
+}
+
+button:focus {
+     outline: none;
+}
+
+/* Post-Reset */
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+header img {
+    padding: .5rem;
+    width: 230px;
+}
+
+#main {
+    padding-top: 5rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url('srilanka.jpg') no-repeat center/cover;
+    box-shadow: 0 0 12px -2px #000;
+    color: white;
+}
+
+#video {
+    color: white;
+    padding-bottom: 2.5rem;
+}
+
+#video iframe{
+    width: 70vw;
+    height: 40vw;
+    margin: auto;
+}
+
+#timeline {
+    background-color: #e4e4e4;
+    box-shadow: 0 -12px 12px -14px #000;
+    border-bottom: 1px solid gray;
+}
+
+#timeline img {
+    padding: 1rem;
+    max-width: 960px;
+    width: 90vw;
+    margin-top: -35px;
+}
+
+#mecs {
+    background-color: #e4e4e4;
+    box-shadow: 0 12px 12px -14px #000;
+    padding-bottom: 2.5rem;
+}
+
+/* This is the only table in the doc */
+/* If more is needed jus place it at the reset */
+
+#mecs table {
+    border-collapse: collapse;
+    display: inline-block;
+    table-layout: fixed;
+    margin: auto;
+    padding: 3rem;
+    border-radius: .4rem;
+    box-shadow: inset 0 0 12px -2px #000;
+}
+
+#mecs table td {
+    text-align: left;
+}
+
+#mecs table td {
+    padding-left: 5rem;
+}
+
+#mecs table td audio {
+    max-block-size: 2.2rem;
+    max-inline-size: 20rem;
+}
+
+#double {
+    color: #fff;
+}
+
+#double #fstvideo, #sndvideo {
+    display: inline-block;
+    width: 40vw;
+    height: 25vw;
+    margin: 1rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+#six {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('life.jpg') no-repeat center/cover;
+    box-shadow: 0 0 12px -2px #000;
+    color: white;
+    position: relative;
+    z-index: 50;
+}
+
+#foot {
+    background-color: #ddd;
+}
+
+/* Some corrections for large screen */
+
+#foot #nav {display: none;}
+
+#foot #content {
+    display:block;
+    padding-top: 3rem;
+}
+
+#foot ul {
+    padding: 0rem 3rem;
+    padding-bottom: 3rem;
+    display: inline-block;
+}
+
+#foot ul li {
+    text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+
+/* Read Mores */
+
+button {display: inline-block;}
+
+p {padding-bottom: 0;}
+
+.more {display: none;}
+
+/* body */
+    
+#mecs table audio {
+    display: none;
+}
+
+/* Some corrections for small screen */
+
+#double button {display: none;}
+
+/* Showing the buttons and correcting margins */
+
+#foot #nav {display: inline-block;}
+
+#foot #content {padding-top: 0;}
+
+#foot button {margin: 3rem .5rem;}
+
+#foot ul li {text-align: center;}
+
+}
+
+@media screen and (max-width: 600px) {
+
+/* Some corrections for small screen */
+
+#double button {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: teal;
+    color: #222;
+    border-color: #222;
+}
+
+#double button:hover {
+    color: teal;
+    border-color: currentColor;
+    background-color: #222;
+}
+
+#double #fstvideo, #sndvideo {
+    margin-bottom: -.5rem;
+    width: 80vw;
+    height: 50vw;
+}
+
+#double #sndvideo {
+    margin-top: 2.5rem;
+    display: none;
+}
+
+/* body */
+
+#video iframe {
+    width: 80vw;
+    height: 50vw;
+    margin: auto;
+}
+
+#mecs table td {
+    display: none;
+}
+
+}
