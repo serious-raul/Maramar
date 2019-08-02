@@ -48,11 +48,12 @@ p {
 
 video {
     height: auto;
-    border-radius: 5px;
+    border-radius: .4rem;
     box-shadow: 0 0 12px -2px #000;
 }
 
 button {
+    /* Only on Small Screens */
     display: none;
     box-shadow: inset 0 0 2px;
     font-weight: bold;
@@ -64,8 +65,20 @@ button {
     margin: 40px;
 }
 
+button:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+
 button:hover {
-    background-color: #fff;
+     color: teal;
+     border-color: currentColor;
+     background-color: white;
+     cursor: pointer;
+}
+
+button:focus {
+     outline: none;
 }
 
 /* Post-Reset */
@@ -99,7 +112,7 @@ header img {
 }
 
 #video video{
-    max-width: 50vw;
+    max-width: 70vw;
     margin: auto;
     margin-bottom: 2rem;
 }
@@ -127,7 +140,7 @@ header img {
     table-layout: fixed;
     margin: auto;
     padding: 5rem;
-    border-radius: 5px;
+    border-radius: .4rem;
     box-shadow: inset 0 0 12px -2px #000;
 }
 
@@ -150,7 +163,7 @@ header img {
 
 #double video{
     width: 40vw;
-    margin: 25px;
+    margin: 1rem;
     margin-top: 0;
     margin-bottom: 50px;
 }
@@ -177,8 +190,6 @@ header img {
 #foot ul li {
     text-align: left;
 }
-
-/* Provisory */
 
 @media screen and (max-width: 900px) {
 
@@ -208,6 +219,10 @@ p {padding-bottom: 0;}
 
 #mecs table td {
     display: none;
+}
+
+#double video{
+    width: 75vw;
 }
 
 }
