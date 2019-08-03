@@ -72,11 +72,11 @@ button:active {
     filter: saturate(150%);
 }
 
-button:hover {
-     color: teal;
-     border-color: currentColor;
-     background-color: white;
-     cursor: pointer;
+#double button:hover {
+    color: #e4e4e4;
+    border-color: currentColor;
+    background-color: #222;
+    cursor: pointer;
 }
 
 button:focus {
