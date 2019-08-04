@@ -72,7 +72,7 @@ button:active {
     filter: saturate(150%);
 }
 
-#double button:hover {
+button:hover {
     color: #e4e4e4;
     border-color: currentColor;
     background-color: #222;
